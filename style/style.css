@@ -91,8 +91,7 @@ body{
     padding: 77px 0;
 }
 
-.container-section-about-for{
-    max-width: 1400px;
+.section-about-for-grey{
     display: flex;
     justify-content: space-around;
 }
@@ -115,8 +114,7 @@ body{
     color: #2B292D; 
 }
 
-.container_img-logo{
-    max-width: 1400px;
+.img-logo-div{
     display: flex;
     justify-content: space-around;
 }
