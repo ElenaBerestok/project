@@ -77,6 +77,7 @@ body{
     padding: 17px 28px;
     border-radius: 2px;
     cursor: pointer;
+    transition: 1s;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%), #3040C4;
 }
 
@@ -114,11 +115,153 @@ body{
     color: #2B292D; 
 }
 
+.base{
+    background-color: rgb(0, 161, 198, 0.07);
+    padding-top: 108px;
+    padding-bottom: 108px;
+}
+
+.div-Engage{
+    max-width: 555px;
+    margin: 0 auto;
+    text-align: center;
+    color: #2B292D;
+}
+
+.Engage{
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 34px;
+}
+
+.Understand{
+    font-size: 56px;
+    font-weight: bold;
+    line-height: 56px;
+    letter-spacing: -0.5px;
+    padding-top: 24px;
+}
+
+.Early{
+    font-size: 24px;
+
+    line-height: 34px;
+    padding-top: 30px;
+}
+
+.Buttons_two{
+    padding-top: 34px;
+    text-align: center;
+}
+
+.button-Learn{
+    margin-left: 10px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 13px;
+    color: black;
+    padding: 17px 28px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 1s;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%), #FFFFFF;;
+}
+
+.button-Learn:hover{
+    background: #3040C4;
+    color: #FFFFFF;
+    transition: 1s;
+}
+
+.Categories{
+    margin-top: 111px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.Categories > div{
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%), #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding-top: 22px;
+    transition: 1s;
+}
+
+.Categories > div:hover{
+    background: #3141C5;
+    color: #FFFFFF;
+    transition: 1s;
+}
+
+.p-categories{
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 28px;
+    color: #2B292D;
+    padding: 22px 25px 33px;
+}
+
 .img-logo-div{
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .img-logo{
-    padding-top: 30px;
+    margin-top: 48px;
+    margin-bottom: 76px;
+}
+
+.Surfaces{
+    background: #F2F2F2; 
+}
+
+.text-Surfaces{
+    max-width: 588px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 90px;
+}
+
+.p_Surfaces{
+    font-weight: 700;
+    font-size: 56px;
+    color: #000000;
+}
+
+.div-p_IOON{
+    max-width: 554px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.p_IOON{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    color: #172342;
+    margin-top: 26px;
+}
+
+.grid_wrapper{
+    padding-top: 97px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 49.52px;
+    column-gap: 41.72px;
+    height: 100%;
+    padding-bottom: 91px;
+}
+
+.item:nth-child(3), .item1:nth-child(4){
+    grid-row: span 2;
+}
+
+.item1 > img{
+    height: 100%;
 }
