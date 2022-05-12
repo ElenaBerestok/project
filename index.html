@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./wow/animate.css">
 </head>
 <body>
     <header class="header">
@@ -49,33 +50,60 @@
         </div>
     </header>
     <section class="section-about-for">
-        <div class="container section-about-for-grey">
-            <div class="about-for about">
-                <p class="text-bold">
-                    What is it about?
-                </p>
-                <p class="text-regular">
-                    Building a website for a startup that looks amazing is not a rocket science anymore.
-                </p>
+            <div class="container section-about-for-grey">
+                <div class="about-for about">
+                    <p class="text-bold">
+                        What is it about?
+                    </p>
+                    <p class="text-regular">
+                        Building a website for a startup that looks amazing is not a rocket science anymore.
+                    </p>
+                </div>
+                <div class="about-for">
+                    <p class="text-bold">
+                        Who is it for?
+                    </p>
+                    <p class="text-regular">                
+                        Startups, small companies and teams, entrepreneurs and web developers.                
+                    </p>
+                </div>
             </div>
-            <div class="about-for">
-                <p class="text-bold">
-                    Who is it for?
-                </p>
-                <p class="text-regular">                
-                    Startups, small companies and teams, entrepreneurs and web developers.                
-                </p>
-            </div>
-        </div>
     </section>
     <section class="img-logo">
         <div class="container img-logo-div">
-                <img src="./img/Bitmap.png" alt="icon">
-                <img src="./img/Bitmap (4).png" alt="icon">
-                <img src="./img/Bitmap (3).png" alt="icon">
-                <img src="./img/Bitmap (5).png" alt="icon">
-                <img src="./img/Bitmap (1).png" alt="icon">
-                <img src="./img/Bitmap (2).png" alt="icon">
+                <img src="./img/img-logo/Bitmap.png" alt="icon">
+                <img src="./img/img-logo/Bitmap (4).png" alt="icon">
+                <img src="./img/img-logo/Bitmap (3).png" alt="icon">
+                <img src="./img/img-logo/Bitmap (5).png" alt="icon">
+                <img src="./img/img-logo/Bitmap (1).png" alt="icon">
+                <img src="./img/img-logo/Bitmap (2).png" alt="icon">
+            </div>
+        </div>
+    </section>
+    <section class="inbox">
+        <div class="container inbox-flex">
+            <div class="inbox-flex-pict">
+                <img class="inbox-flex__img" src="./img/time/time.png" alt="time">
+            </div>
+            <div class="inbox-flex-content">
+                <p class="text-mini text-mini__orange">
+                    Team Inbox
+                </p>
+                <h3 class="inbox-flex__h3 wow heartBeat">
+                    Manage conversations
+                </h3>
+                <p class="text-inner inbox-flex__text-inner">
+                    One place to manage and respond to all conversations with leads and users. Receive messages from leads.
+                </p>
+                <div class="inbox-flex-content-block">
+                        <p class="inbox-flex-content-block__p">
+                            “Great widgets. Great selection. Great design and <span class="span_bold">easy to implement.</span> Definitely a huge time saver for a web developer!”
+                        </p>
+                    <div class="inbox-flex-content-block-otz">
+                        <img src="./img/time/Profile Image.svg" alt="image" class="inbox-flex-content-block-otz__img">
+                        <p class="inbox-flex-content-block-otz__p"><span class="span_bold">Viella Malkovich</span> <br> Creative Director at Johnson</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -96,7 +124,7 @@
                 </div>
             </div>
             <div>
-                <img src="./img/mobile.png" alt="mobile">
+                <img class="busy-img" src="./img/mob/mobile.png" alt="mobile">
             </div>
         </div>
         <div class="container line">
@@ -141,7 +169,7 @@
         <div class="container base-div">
             <div class="div-engage">
                 <p class="engage">Engage Visitors</p>
-                <p class="understand">Understand your audience</p>
+                <h3 class="understand">Understand your audience</h3>
                 <p class="early">Early stage company? Eligible applicants get all of our products for just $49 a month.</p>
             </div>
             <div class="buttons_two">
@@ -150,19 +178,19 @@
             </div>
             <div class="categories">
                 <div class="categories_grid">
-                    <img src="./img/ouch1.png" alt="icons">
+                    <img class="categories__img" src="./img/categories/ouch1.png" alt="icons">
                     <p class="p-categories">Developers</p>
                 </div>
                 <div class="categories_grid">
-                    <img src="./img/ouch2.png" alt="icons">
+                    <img class="categories__img" src="./img/categories/ouch2.png" alt="icons">
                     <p class="p-categories">Entertainment</p>
                 </div>
                 <div class="categories_grid"v>
-                    <img src="./img/ouch 3.png" alt="icons">
+                    <img class="categories__img" src="./img/categories/ouch 3.png" alt="icons">
                     <p class="p-categories">Athletes</p>
                 </div>
                 <div class="categories_grid">
-                    <img src=".//img/ouch4.png" alt="icons">
+                    <img class="categories__img" src="./img/categories/ouch4.png" alt="icons">
                     <p class="p-categories">Creators</p>
                 </div>
             </div>
@@ -171,9 +199,9 @@
     <section class="surfaces">
         <div class="container div-surfaces">
             <div class="text-surfaces">
-                <p class="p_surfaces">
+                <h3 class="h_surfaces">
                     All Surfaces Covered
-                </p>
+                </h3>
             </div>
             <div class="div-p_kills">
                  <p class="p_kills">
@@ -181,15 +209,173 @@
                  </p>
             </div>
             <div class="grid_wrapper">
-                    <img src="./img/grid1.png" alt="grid">
-                    <img src="./img/grid2.png" alt="grid">
-                    <img src="./img/grid3.png" alt="grid">
-                    <img src="./img/grid4.png" alt="grid">
-                    <img src="./img/grid5.png" alt="grid">
-                    <img src="./img/grid6.png" alt="grid">
-                    <img src="./img/grid7.png" alt="grid">
+                    <img class="grid_wrapper__img" src="./img/grid/grid1.png" alt="grid">
+                    <img class="grid_wrapper__img" src="./img/grid/grid2.png" alt="grid">
+                    <img class="grid_wrapper__img" src="./img/grid/grid3.png" alt="grid">
+                    <img class="grid_wrapper__img" src="./img/grid/grid4.png" alt="grid">
+                    <img class="grid_wrapper__img" src="./img/grid/grid5.png" alt="grid">
+                    <img class="grid_wrapper__img" src="./img/grid/grid6.png" alt="grid">
+                    <img class="grid_wrapper__img" src="./img/grid/grid7.png" alt="grid">
             </div>
         </div>
     </section>
+    <section class="bg-grey">
+        <div class="container free-flex">
+            <div>
+                <img class="animation_img" src="./img/bg-grey/animal.png" alt="animal">
+            </div>
+            <div>
+                <h4 class="free-title">
+                    Start your free trial.
+                </h4>
+                <p class="free-text">
+                    Get notified about company updates, news and blog posts. We hate spam.
+                </p>
+                <form action="">
+                    <input placeholder="Enter your email" class="free-input" required type="text">
+                    <button class="button free-button">
+                        Get Started
+                    </button>
+                </form>
+                <p class="free-p">
+                    Free 14-day trial · Easy setup · Cancel any time. Check out <span> <a href="">Terms of Use.</a></span>
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container footer-flex">
+            <div class="footer-flex-block">
+                <div class="logo footer-logo">
+                    <div>
+                        <img src="./img/Logo.svg" alt="Logo">
+                    </div>
+                    <div class="logo-text">
+                        <p class="logo-bold">
+                            Foundation
+                        </p>
+                        <p class="logo-regular">
+                            Startup landing template
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-flex-block-text">
+                    <p>
+                        Foundation is a website template for startups and small teams. It helps to build a website in no time.
+                    </p>
+                </div>
+                <div class="footer-flex-block-icon">
+                    <a href="">
+                        <img src="./img/footer/AppStore.png" alt="AppStore">
+                    </a>
+                    <a href="">
+                        <img src="./img/footer/Google Play.png" alt="Google Play">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-flex-list">
+                <p class="footer-flex-list__title">
+                    Product
+                </p>
+                <ul>
+                    <li class="footer-flex-list__li">
+                        <a href="">
+                            Acquire Users
+                        </a>
+                    </li>
+                    <li class="footer-flex-list__li">
+                        <a href="">
+                            Content Marketing
+                        </a>
+                    </li>
+                    <li class="footer-flex-list__li">
+                        <a href="">
+                            Website Templates
+                        </a>
+                    </li>
+                    <li class="footer-flex-list__li">
+                        <a href="">
+                            Customer Management
+                        </a>
+                    </li>
+                    <li class="footer-flex-list__li">
+                        <a href="">
+                            Virtual Inbox
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-flex-list">
+                <p class="footer-flex-list__title">
+                    Company
+                </p>
+                <ul>
+                    <li class="footer-flex-list__li">
+                        <a href="">
+                            About Foundation
+                        </a>
+                    </li>
+                    <li class="footer-flex-list__li">
+                        <a href="">
+                            Brand Guidelines
+                        </a>
+                    </li>
+                    <li class="footer-flex-list__li">
+                        <a href="">
+                            Press Kit
+                        </a>
+                    </li>
+                    <li class="footer-flex-list__li">
+                        <a href="">
+                            Support
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr class="footer-hr">
+        <div class="container footer-flex-aside">
+            <div class="footer-flex-item">
+                <ul>
+                    <li class="footer-flex-aside__li">
+                        <a href="">
+                            Terms
+                        </a>
+                    </li>
+                    <li class="footer-flex-aside__li">
+                        <a href="">
+                            Privacy
+                        </a>
+                    </li>
+                    <li class="footer-flex-aside__li">
+                        <a href="">
+                            License
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-flex-icon">
+                <a href="">
+                    <img src="./img/footer/icon-twitter.png" alt="twitter">
+                </a>
+                <a href="">
+                    <img src="./img/footer/icon-fb.png" alt="fb">
+                </a>
+                <a href="">
+                    <img src="./img/footer/LinkedIn.png" alt="LinkedIn">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/path/to/parallax.min.js"></script>
+    <script>$('.busy').parallax({imageSrc: 'https://avatanplus.com/files/resources/original/57d3a72cbcb2f15712c506e5.jpg'});</script>
+
+    <script src="./wow/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
 </body>
 </html>
