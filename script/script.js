@@ -4,3 +4,10 @@ $('.hiring-items > div').on('click', function(){
   $(this).toggleClass('toggleColor ');
   $(this).next('p').slideToggle(200).toggleClass('toggleColor ');
 }) 
+
+$('.carusel').slick({
+    /*autoplay: true,*/
+    autoplaySpeed:5000,
+    dots: true,
+    adaptiveHeight:true,
+});

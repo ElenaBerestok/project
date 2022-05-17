@@ -9,8 +9,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" />
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./wow/animate.css">
+    <link rel="stylesheet" href="./style/modal.css">
 </head>
 <body>
     <header class="header header-sticky">
@@ -73,7 +76,7 @@
                     <button class="button">
                         Get Started
                     </button> 
-                    <button class="button button-white">
+                    <button id="modal-button" class="button button-white">
                         Learn More
                     </button>
                 </div>          
@@ -275,6 +278,44 @@
                 <div class="categories_grid">
                     <img class="categories__img" src="./img/categories/ouch4.png" alt="icons">
                     <p class="p-categories">Creators</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="carusel-block">
+        <div class="container carusel-block-container">
+            <p class="carusel-block-title">
+                Trusted by the world’s most innovative businesses – big and small
+            </p>
+            <div class="carusel-flex">
+                <div class="carusel">
+                    <div>
+                    <p class="carusel-text">
+                        “Comprehensive set of startup tools for all imaginable entrepreneurial needs. Create landing pages, send emails, find freelancers. Perfect for sales, marketing, and support”
+                    </p>
+                    <p class="carusel-span">
+                        <span> Viella Malkovich </span> <br> Creative Director at Johnson
+                    </p>
+                    </div>
+                    <div>
+                        <p p class="carusel-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nam nostrum repudiandae a odio natus? Voluptatum repellendus totam doloremque odio sint laborum assumenda, deserunt reiciendis? Maiores nemo explicabo ducimus rerum a quam, eum deserunt natus eligendi quaerat pariatur rem autem porro ut fugit quo nulla voluptatum delectus? Exercitationem, sed modi?
+                        </p>
+                        <p class="carusel-span">
+                            <span> Viella Malkovich</span><br> Creative Director at Johnson
+                        </p>
+                    </div>
+                    <div>
+                        <p p class="carusel-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam harum dolores animi dicta quae aspernatur fuga iure, laboriosam rerum veniam?
+                        </p >
+                        <p class="carusel-span">
+                            <span> Viella Malkovich</span><br> Creative Director at Johnson
+                        </p>
+                    </div>
+                </div>
+                <div class="carusel-block-pict">
+                    <img src="./img/carusel/carusel.png" alt="carusel">
                 </div>
             </div>
         </div>
@@ -529,12 +570,28 @@
             </div>
         </div>
     </footer>
+    <div class="modal-overlay">
+        <div class="modal">
+            <div class="modal-content">
+                <div>
+                    <img src="./img/grid/grid2.png" alt="">
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni aperiam aut sit deleniti, eius incidunt.
+                </p>
+            </div>
+            <p class="close">x</p>
+        </div>
+    </div>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
     <!--<script>$('.busy').parallax({imageSrc: 'https://avatanplus.com/files/resources/original/57d3a72cbcb2f15712c506e5.jpg'});</script> -->
+
     <script src="./script/script.js"></script>
+    <script src="./script/modal.js"></script>
 
     <script src="./wow/wow.min.js"></script>
               <script>

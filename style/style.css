@@ -609,6 +609,81 @@ h3{
     padding: 22px 25px 33px;
 }
 
+.carusel-block-container{
+    margin-top: 70px;
+    position: relative;
+}
+
+.carusel-block-title{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30px;
+    text-align: center;
+    color: #3142C6;
+}
+
+.carusel-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.carusel{
+    max-width: 750px;
+    margin: 28px auto;
+}
+
+.carusel-text{
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
+}
+
+.carusel-span{
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 34px;
+    text-align: center;
+}
+
+.carusel-span > span{
+    font-weight: bold;
+}
+
+.carusel-block-pict{
+    position: absolute;
+    top: 82px;
+    right: -60px;
+    z-index: -1;
+    opacity: 0.75;
+}
+
+.slick-prev:before, .slick-next:before {
+    line-height: 3;
+    opacity: .75;
+    color: green;
+    position: relative;
+    z-index: 1;
+}
+
+.slick-dots li button:before {
+    font-size: 10px;
+    line-height: 55px;
+    content: '•';
+    text-align: center;
+    opacity: .5;
+    color: green;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: green;
+}
+
+
+
+
+
+
 .hiring-content{
     max-width: 555px;
     margin: 0 auto;
@@ -1406,6 +1481,17 @@ h3{
         padding-top: 27px;
     }
 
+    .carusel-block-pict{
+        position: static;
+        margin-top: 50px;
+    }
+
+    .carusel-flex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .hiring-content__title{
         margin-bottom: 14px;
     }
@@ -1708,6 +1794,15 @@ h3{
         margin-top: 75px;
     }
 
+    .carusel{
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .carusel-text{
+        margin-top: 20px;
+    }
+
     .surfaces{
         padding-top: 80px;
     }
@@ -1748,6 +1843,11 @@ h3{
     .footer-logo {
         margin-top: 70px;
     }
+
+    .modal-content > div > img{
+        width: 80%;
+        height: 80%;
+    }
 }
 
 
@@ -1785,6 +1885,11 @@ h3{
 
     .img-logo-div{
         gap: 25px;
+    }
+
+    .carusel{
+        max-width: 430px;
+        margin: 0 auto;
     }
 
     .features-flex-icon {
@@ -1925,6 +2030,7 @@ h3{
 
     .title-inner{
         line-height: 39px;
+        text-align: left;
     }
 
     .text-inner{
@@ -1934,6 +2040,18 @@ h3{
 
     .line__hr{
         display: none;
+    }
+
+    .carusel-block-title, .carusel-text, .carusel-span{
+        text-align: left;
+    }
+
+    .carusel{
+        max-width: 310px;
+    }
+
+    .carusel-block-pict  img{
+        width: 100%;
     }
 
     .features-flex-content-select__hr-grey, .features-flex-content-select__hr-blue{
@@ -2105,6 +2223,10 @@ h3{
         width: 80%;
     }
 
+    .carusel {
+        max-width: 230px;
+    }
+
     .features-flex-content__title{
         line-height: 40px;
         letter-spacing: -0.357143px;
@@ -2251,8 +2373,6 @@ h3{
         padding: 15px 30px;
     }
 
-
-    
 }
 
 @media (max-width:320px){
@@ -2302,6 +2422,14 @@ h3{
         "one two three"
         "four five six";
         gap: 0;
+    }
+
+    .carusel {
+        max-width: 290px;
+    }
+
+    .slick-prev:before, .slick-next:before{
+        display: none;
     }
 
     .features-flex-content-select__item > img{
@@ -2538,5 +2666,4 @@ h3{
     .footer-flex-block-icon > a:first-child {
         margin-right: 10px;
     }
-
 }
