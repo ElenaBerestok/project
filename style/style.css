@@ -666,9 +666,9 @@ h3{
 }
 
 .slick-dots li button:before {
-    font-size: 10px;
+    font-size: 20px;
     line-height: 55px;
-    content: '•';
+    content: '◆';
     text-align: center;
     opacity: .5;
     color: green;
