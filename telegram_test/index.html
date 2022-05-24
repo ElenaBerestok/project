@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <form method="post">
+        <div>
+            <input placeholder="Your name" id="name" type="text">
+            <p id="error-name" class="error-message">
+            </p>
+        </div>
+        <div>
+            <input placeholder="email@gmail.com" id="email" type="email">
+            <p id="error-email" class="error-message">
+            </p>
+        </div>
+        <button id="button" type="submit">
+            Send info
+        </button>
+    </form>
+    <form method="post">
+            <div class="modal-overlay">
+                <div class="modal-telegram">
+                    <div>
+                        <img class="modal-overlay-img" src="./img/smile.jpg" alt="smile">
+                    </div>
+                    <p class="close">x</p>
+                </div>
+            </div>
+    </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script_telegram/script.js"></script>
+</body>
+</html>

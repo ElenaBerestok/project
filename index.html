@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" />
@@ -20,7 +21,7 @@
         <div class="container header-container">
             <div class="logo">
                 <div>
-                    <img src="./img/Logo.svg" alt="">
+                    <img src="./img/logo.svg" alt="">
                 </div>
                 <div>
                     <p class="logo-bold"> 
@@ -31,8 +32,8 @@
                     </p>
                 </div>
             </div>
-                <section class="menu">
-                    <input class="checkbox" type="checkbox">
+                <section class="menu" id="menuToggle">
+                    <input class="checkbox" id="toggleCheckbox" type="checkbox">
                     <div class="check-wrapper">
                         <div class="check"></div>
                         <div class="check"></div>
@@ -42,12 +43,12 @@
             <nav class="header-nav">
                         <ul>
                             <li class="header-li">
-                                <a href="">
+                                <a id="home" href="">
                                     Home
                                 </a>
                             </li>
                             <li class="header-li">
-                                <a href="">
+                                <a id="stories" href="">
                                     Stories
                                 </a>
                             </li>
@@ -108,17 +109,17 @@
     </section>
     <section class="img-logo">
         <div class="container img-logo-div">
-                <img src="./img/img-logo/Bitmap.png" alt="icon">
-                <img src="./img/img-logo/Bitmap (4).png" alt="icon">
-                <img src="./img/img-logo/Bitmap (3).png" alt="icon">
-                <img src="./img/img-logo/Bitmap (5).png" alt="icon">
-                <img src="./img/img-logo/Bitmap (1).png" alt="icon">
-                <img src="./img/img-logo/Bitmap (2).png" alt="icon">
+                <img src="./img/img-logo/icon.png" alt="icon">
+                <img src="./img/img-logo/bitmap (4).png" alt="icon">
+                <img src="./img/img-logo/bitmap (3).png" alt="icon">
+                <img src="./img/img-logo/bitmap (5).png" alt="icon">
+                <img src="./img/img-logo/bitmap (1).png" alt="icon">
+                <img src="./img/img-logo/bitmap (2).png" alt="icon">
             </div>
         </div>
     </section>
-    <section class="container features">
-        <div class="features-flex">
+    <section id="features" class="features">
+        <div class="container features-flex">
             <div class="features-flex-content">
                 <div class="features-flex-icon">
                     <img src="./img/features/ouch.svg" alt="icon">
@@ -135,34 +136,53 @@
                     </p>
                 </div>
                 <div class="features-flex-content-select">
-                    <div class="features-flex-content__link">
-                        <img src="./img/features/Icon.svg" alt="icon">
-                        <a href="">Acquire new customers</a>
+                    <div class="features-flex-content-select-block">
+                        <div class="features-flex-content-select__item">
+                            <!-- <img src="./img/features/icon.svg" alt="Icon"> -->
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.376 0 0 5.376 0 12C0 18.624 5.376 24 12 24C18.624 24 24 18.624 24 12C24 5.376 18.624 0 12 0ZM12 10.68C11.268 10.68 10.68 11.268 10.68 12C10.68 12.732 11.268 13.32 12 13.32C12.732 13.32 13.32 12.732 13.32 12C13.32 11.268 12.732 10.68 12 10.68ZM4.8 19.2L14.628 14.628L19.2 4.8L9.372 9.372L4.8 19.2Z" fill="#2B292D"/>
+                            </svg>
+                            <p>Acquire new customers</p>
+                        </div>
+                        <p class="features-flex-content-select__text">
+                            Everything you need to start building – including open-source code, documentation.
+                        </p>
+                        <div class="features-flex-content-select__line"></div>
                     </div>
-                    <p class="features-flex-content-select__text">
+                    <div class="features-flex-content-select-block">
+                        <div class="features-flex-content-select__item">
+                            <!-- <img src="./img/features/engage.svg" alt="Engage"> -->
+                            <svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 5.95238L11.5 0L23 5.95238V8.33333H0V5.95238ZM2.42105 10.7143V19.0476H6.05263V10.7143H2.42105ZM9.68421 10.7143V19.0476H13.3158V10.7143H9.68421ZM23 21.4286V25H0V21.4286H23ZM16.9474 10.7143V19.0476H20.5789V10.7143H16.9474Z" fill="#2B292D"/>
+                            </svg>
+                            <p>
+                                Engage users
+                            </p>
+                        </div>
+                        <p class="features-flex-content-select__text">
+                            Everything you need to start building – including open-source code, documentation.
+                        </p>
+                        <div class="features-flex-content-select__line"></div>
+                    </div>
+                    <div class="features-flex-content-select-block">
+                        <div class="features-flex-content-select__item">
+                            <!-- <img src="./img/features/develop.svg" alt="Develop"> -->
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M19.5556 0H2.44444C1.1 0 0 1.1 0 2.44444V11C0 12.3444 1.1 13.4444 2.44444 13.4444H19.5556C20.9 13.4444 22 12.3444 22 11V2.44444C22 1.1 20.9 0 19.5556 0ZM19.5556 7.33333H14.6667C14.6667 9.31333 12.98 11 11 11C9.02 11 7.33333 9.31333 7.33333 7.33333H2.44444V2.44444H19.5556V7.33333ZM22 15.8889H14.6667C14.6667 17.9178 13.0289 19.5556 11 19.5556C8.97111 19.5556 7.33333 17.9178 7.33333 15.8889H0V19.5556C0 20.9 1.1 22 2.44444 22H19.5556C20.9 22 22 20.9 22 19.5556V15.8889Z" fill="#2B292D"/>
+                            </svg>
+                            <p>
+                                Develop across platforms
+                            </p>
+                        </div>
+                            <p class="features-flex-content-select__text">
                         Everything you need to start building – including open-source code, documentation.
-                    </p>
-                    <div>
-                    <hr class="features-flex-content-select__hr-blue">
-                    </div>
-                    <div class="features-flex-content-select__item">
-                        <img src="./img/features/Engage.svg" alt="Engage">
-                        <p>
-                            Engage users
                         </p>
-                        <hr class="features-flex-content-select__hr-grey">
-                    </div>
-                    <div class="features-flex-content-select__item">
-                        <img src="./img/features/Develop.svg" alt="Develop">
-                        <p>
-                            Develop across platforms
-                        </p>
-                        <hr class="features-flex-content-select__hr-grey">
+                        <div class="features-flex-content-select__line"></div>
                     </div>
                 </div>
             </div>
             <div class="features-flex-img">
-                <img src="./img/features/Invision Screen.png" alt="Screen">
+                <img src="./img/features/invision screen.png" alt="Screen">
             </div>
         </div>
     </section>
@@ -186,7 +206,7 @@
                             “Great widgets. Great selection. Great design and <span class="span_bold">easy to implement.</span> Definitely a huge time saver for a web developer!”
                         </p>
                     <div class="inbox-flex-content-block-otz">
-                        <img src="./img/time/Profile Image.svg" alt="image" class="inbox-flex-content-block-otz__img">
+                        <img src="./img/time/profile image.svg" alt="image" class="inbox-flex-content-block-otz__img">
                         <p class="inbox-flex-content-block-otz__p"><span class="span_bold">Viella Malkovich</span> <br> Creative Director at Johnson</p>
                     </div>
                 </div>
@@ -283,45 +303,49 @@
         </div>
     </section>
     <section class="carusel-block">
-        <div class="container carusel-block-container">
-            <p class="carusel-block-title">
-                Trusted by the world’s most innovative businesses – big and small
-            </p>
-            <div class="carusel-flex">
-                <div class="carusel">
-                    <div>
+        <div class="carusel-flex">
+            <div class="carusel">
+                <div class="carusel-content">
+                    <p class="carusel-block-title">
+                        Trusted by the world’s most innovative businesses – big and small
+                    </p>
                     <p class="carusel-text">
                         “Comprehensive set of startup tools for all imaginable entrepreneurial needs. Create landing pages, send emails, find freelancers. Perfect for sales, marketing, and support”
                     </p>
                     <p class="carusel-span">
                         <span> Viella Malkovich </span> <br> Creative Director at Johnson
                     </p>
-                    </div>
-                    <div>
-                        <p p class="carusel-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nam nostrum repudiandae a odio natus? Voluptatum repellendus totam doloremque odio sint laborum assumenda, deserunt reiciendis? Maiores nemo explicabo ducimus rerum a quam, eum deserunt natus eligendi quaerat pariatur rem autem porro ut fugit quo nulla voluptatum delectus? Exercitationem, sed modi?
+                </div>
+                <div>
+                    <p class="carusel-block-title text-aqua">
+                        Trusted by the world’s most innovative businesses – big and small
+                    </p>
+                    <p class="carusel-text">
+                         “Comprehensive set of startup tools for all imaginable entrepreneurial needs. Create landing pages, send emails, find freelancers. Perfect for sales, marketing, and support”
+                    </p>
+                    <p class="carusel-span">
+                        <span> Viella Malkovich </span> <br> Creative Director at Johnson
+                    </p>
+                </div>
+                <div>
+                        <p class="carusel-block-title text-aquamarine">
+                            Trusted by the world’s most innovative businesses – big and small
+                        </p>
+                        <p class="carusel-text">
+                            “Comprehensive set of startup tools for all imaginable entrepreneurial needs. Create landing pages, send emails, find freelancers. Perfect for sales, marketing, and support”
                         </p>
                         <p class="carusel-span">
-                            <span> Viella Malkovich</span><br> Creative Director at Johnson
+                            <span> Viella Malkovich </span> <br> Creative Director at Johnson
                         </p>
-                    </div>
-                    <div>
-                        <p p class="carusel-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam harum dolores animi dicta quae aspernatur fuga iure, laboriosam rerum veniam?
-                        </p >
-                        <p class="carusel-span">
-                            <span> Viella Malkovich</span><br> Creative Director at Johnson
-                        </p>
-                    </div>
                 </div>
-                <div class="carusel-block-pict">
-                    <img src="./img/carusel/carusel.png" alt="carusel">
-                </div>
+            </div>
+            <div class="carusel-block-pict">
+                <img src="./img/carusel/carusel.png" alt="carusel">
             </div>
         </div>
     </section>
-    <section class="container hiring">
-        <div class="hiring-content">
+    <section class="hiring">
+        <div class="container hiring-content">
             <h3 class="hiring-content__title">
                 We’re hiring
             </h3>
@@ -385,7 +409,7 @@
             </div>
         </div>
     </section>
-    <section class="surfaces">
+    <section id="surfaces" class="surfaces">
         <div class="container div-surfaces">
             <div class="text-surfaces">
                 <h3 class="h_surfaces">
@@ -451,7 +475,7 @@
             <div class="footer-flex-block">
                 <div class="logo footer-logo">
                     <div>
-                        <img src="./img/Logo.svg" alt="Logo">
+                        <img src="./img/logo.svg" alt="Logo">
                     </div>
                     <div class="logo-text">
                         <p class="logo-bold">
@@ -469,10 +493,10 @@
                 </div>
                 <div class="footer-flex-block-icon">
                     <a href="">
-                        <img src="./img/footer/AppStore.png" alt="AppStore">
+                        <img src="./img/footer/appstore.png" alt="AppStore">
                     </a>
                     <a href="">
-                        <img src="./img/footer/Google Play.png" alt="Google Play">
+                        <img src="./img/footer/google play.png" alt="Google Play">
                     </a>
                 </div>
             </div>
@@ -565,7 +589,7 @@
                     <img src="./img/footer/icon-fb.png" alt="fb">
                 </a>
                 <a href="">
-                    <img src="./img/footer/LinkedIn.png" alt="LinkedIn">
+                    <img src="./img/footer/linkedIn.png" alt="LinkedIn">
                 </a>
             </div>
         </div>
@@ -584,6 +608,10 @@
         </div>
     </div>
 
+
+    <div id="up">
+        <i class="fa-solid fa-circle-chevron-up"></i>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous"></script>

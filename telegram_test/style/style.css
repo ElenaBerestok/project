@@ -1,0 +1,33 @@
+.modal-overlay{
+    display: none;
+    position: fixed;
+    background: rgba(248, 150, 150, 0.2);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.modal-telegram{
+    max-width: 550px;
+    background: pink;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal-overlay-img{
+    width: 350px;
+    height: 250px;
+}
+
+.close {
+    position: absolute;
+    font-weight: bold;
+    font-size: 30px;
+    cursor: pointer;
+    top: -30px;
+    right: 11px;
+}
